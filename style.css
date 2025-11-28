@@ -318,3 +318,61 @@ form textarea {
         width: 100%;
     }
 }
+
+@media(max-width: 1024px) {
+    .hero-text h1 { font-size: 40px; }
+    .hero-img img { width: 280px; }
+}
+
+@media(max-width: 900px) {
+
+    /* Navbar */
+    .menu-btn { display: block; }
+    
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background: #111;
+        width: 200px;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-img img {
+        width: 250px;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-info, .contact-box {
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px) {
+    .hero-text h1 { font-size: 28px; }
+    .hero-text h2 { font-size: 18px; }
+    .hero-img img { width: 200px; }
+    .section-title { font-size: 35px; }
+    .skill { padding: 15px; }
+}
