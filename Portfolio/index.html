@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Portfolio</div>
+
+        <nav class="nav-links" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Parth Prajapati</span></h1>
+            <h2>An IT Student & Aspiring Web Development & AI-ML</h2>
+            <p>I’m a 5th semester Diploma IT student at Silver Oak University, passionate about coding and technology. I enjoy working with Java, Python, and Web Development, and I’m currently exploring Machine Learning and Web Development. My goal is to build innovative projects that solve real-world problems while continuously improving my skills</p>
+
+            <div class="hero-buttons">
+                <a class="btn primary" href="#contact">Hire Me</a>
+                <a class="btn" href="#projects">View Projects</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="parth.jpg" alt="profile">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+
+
+
+            <div>
+                <h3>Who I Am</h3>
+                <p>
+                    Hello! I’m Parth Prajapati, a 5th semester Diploma IT student at Silver Oak University. I started my journey in technology with programming basics like python and java. <br> I enjoy learning how technology can be applied to create real-world solutions." <br>
+
+                My future goal is to pursue B.Tech in Information Technology and build a career in Web-Dev & Ai-Ml, while continuing to strengthen my development skills. <br> Apart from academics, I’m passionate about cars, technology, and video editing
+                </p>
+
+                <div class="about-cards">
+                    <div class="card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>Diploma In Information Technology <br>
+                            Silver Oak University,Ahmedabad <br>
+                            2023 – Present
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="student.jpeg">
+                <h3>Student Marks prediction</h3><br>
+                <p>"A Machine Learning project that predicts students marks based on their study hours. This project uses Python, NumPy, Pandas, Matplotlib, Seaborn, and scikit-learn to analyze datasets and build predictive models. It implements algorithms like KNN (K-Nearest Neighbors) and K-Means clustering to find patterns and predict outcomes. The system helps in understanding how study hours influence academic performance, making it useful for students and educators"</p>
+            </div>
+
+            <div class="project-card">
+                <img src="Screenshot 2025-09-16 231356.png">
+                <h3>Online Doctor Appointment system</h3><br>
+                <p>The system aims to simplify the process of booking doctor appointments by providing a convenient online platform for patients. It reduces waiting time, improves accessibility to healthcare services, and helps doctors manage schedules efficiently. It enhances overall coordination between patients, doctors, and the clinic.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">c/c++</div>
+            <div class="skill">Git(Basic)</div>
+            <div class="skill">Networking</div>
+        </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE: CONTACT INFO -->
+        <div class="contact-info">
+
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Email</h4>
+                    <p>parthladva1704@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Phone</h4>
+                    <p>+91 6359727738</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Location</h4>
+                    <p>Ahmedabad, Gujarat, India</p>
+                </div>
+            </div>
+
+            <h3 class="follow-title">Follow Me</h3>
+
+            <div class="social-links">
+                <button onclick="openLink('github')" class="social-btn"><i class="fab fa-github"></i></button>
+                <button onclick="openLink('linkedin')" class="social-btn"><i class="fab fa-linkedin"></i></button>
+                <button onclick="openLink('instagram')" class="social-btn"><i class="fab fa-instagram"></i></button>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE: CONTACT FORM -->
+        <div class="contact-box">
+            <form action="https://formspree.io/f/xrbwywjb" method="post">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="name" placeholder="Email">
+                <input type="text" name="name" placeholder="Subject">
+                <textarea placeholder="Message" name="Message"></textarea>
+                <button class="btn primary">Send Message</button>
+            </form>
+        </div>
+</section>
+</body>
+</html>
