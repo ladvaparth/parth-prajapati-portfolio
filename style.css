@@ -20,7 +20,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    position: fixed;
+    position: sticky;
     width: 100%;
     padding: 15px 7%;
     display: flex;
@@ -75,7 +75,7 @@ body {
 }
 
 .hero-buttons {
-    margin-top: 20px;
+    margin-top: 200px;
 }
 .btn {
     padding: 10px 25px;
